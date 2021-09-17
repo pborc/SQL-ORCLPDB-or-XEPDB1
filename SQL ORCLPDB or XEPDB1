@@ -1,0 +1,8 @@
+***open in CMD.EXE****
+
+sqlplus / as sysdba;
+alter session set container=XEPDB1;
+alter pluggable database open;
+alter pluggable database XEPDB1 save state;
+alter user hr identified by hr account unlock; 
+/
